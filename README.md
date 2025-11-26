@@ -26,9 +26,7 @@ This tool provides a structured assessment workflow whereby location managers in
 
       
 ## Live demo
-*Coming soon*
-
-[Open the app on Streamlit Cloud](https://URL)
+[Open the app on Streamlit Cloud](https://location-agreement-decision-tool.streamlit.app/)
 
 ## Repository structure
 - 'app.py' - Streamlit interface
