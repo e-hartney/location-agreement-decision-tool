@@ -56,7 +56,7 @@ if st.button("Assess"):
            st.write(f"- {r}")
 
     if len(result.clearance_tasks) != 0 or len(result.production_tasks) != 0:
-        st.subheader("Inform the following other teams:")
+        st.subheader("Inform the following teams:")
 
         if len(result.clearance_tasks) != 0:
             st.write("**Clearances:**")
