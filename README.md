@@ -13,12 +13,12 @@ This tool provides a structured assessment workflow whereby location managers in
 
 ## To run the app locally:
 1. Install dependencies:
-
+   ```bash
    pip install -r requirements.txt 
 
 2. Run the Streamlit app:
-   
-      streamlit run app.py
+   ```bash
+   streamlit run app.py
    
 3. App should open automatically in browser
 
