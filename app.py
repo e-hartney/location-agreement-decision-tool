@@ -55,24 +55,24 @@ if st.button("Assess"):
         for r in result.legal_reasons:
            st.write(f"- {r}")
 
-    if len(result.clearance_tasks) != 0 or len(result.production_tasks) != 0:
+    if result.clearance_tasks or result.production_tasks:
         st.subheader("Inform the following teams:")
 
-        if len(result.clearance_tasks) != 0:
+        if result.clearance_tasks:
             st.write("**Clearances:**")
             for r in result.clearance_tasks:
                 st.write(f"- {r}")
 
-        if len(result.production_tasks) != 0:
+        if result.production_tasks:
             st.write("**Production:**")
             for r in result.production_tasks:
                 st.write(f"- {r}")
 
-    if len(result.contract_riders) != 0:
+    if result.contract_riders:
         st.subheader("Include the following contract riders:")
         for r in result.contract_riders:
            st.write(f"- {r}")
     
-    if len(result.legal_reasons) == 0 and len(result.clearance_tasks) == 0 and len(result.production_tasks) ==0 and len(result.contract_riders) ==0:
+    if (len(result.legal_reasons) == 0 and len(result.clearance_tasks) == 0 and len(result.production_tasks) ==0 and len(result.contract_riders) ==0:
         st.write("Proceed with template agreement - contact legal with any queries")
 
