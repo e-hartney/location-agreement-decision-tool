@@ -30,7 +30,6 @@ animals = st.checkbox("Animals to be used")
 extreme_stunts = st.checkbox("Extreme stunts to be carried out")
 crowd_scene = st.checkbox("Crowd scene required")
 
-
 if st.button("Assess"):
     result = assess_location_request(
     key_location = key_location,
