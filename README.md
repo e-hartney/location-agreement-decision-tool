@@ -21,6 +21,7 @@ This tool provides a structured assessment workflow whereby location managers in
    streamlit run app.py
    
 3. App should open automatically in browser
+   
    (If it does not, go to http://localhost:8501)
 
       
