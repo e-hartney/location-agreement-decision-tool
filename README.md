@@ -5,7 +5,7 @@ A brief checklist for location managers that models an internal decision tree fo
 This tool provides a structured assessment workflow whereby location managers input key information about a location, including its intended use during filming and any issues that might affect future rights (such as clearances). The output helps them to understand when the standard template location agreement can be used and when negotiations will need to be escalated to the legal team. The tool also helps location managers decide which issues relating to a location need to be flagged to colleagues in other teams.
 
 ## Features
-- Streamlit UI for easy interaction (especially helpful for travelling location managers)
+- Streamlit UI for quick interaction from a browser (e.g. for travelling location managers)
 - Structured legal assessment logic contained in a standalone module (location_logic.py)
 - Categorisation of legal, clearances, production management and contract riders triggers
 - Clear output summarising required actions with reasoning
