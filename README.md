@@ -33,7 +33,7 @@ This tool provides a structured assessment workflow whereby location managers in
 - 'location_logic.py' - legal assessment logic
 - 'requirements.txt' - dependencies
 - '/assets' - folder for screenshots and other assets
-- 'README.md' - projection documentation
+- 'README.md' - project documentation
 - 'LICENSE' - project licence
 
 ## Example output
