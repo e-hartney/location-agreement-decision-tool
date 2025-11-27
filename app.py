@@ -73,6 +73,11 @@ if st.button("Assess"):
         for r in result.contract_riders:
            st.write(f"- {r}")
     
-    if (len(result.legal_reasons) == 0 and len(result.clearance_tasks) == 0 and len(result.production_tasks) ==0 and len(result.contract_riders) ==0:
+    if (
+        not result.legal_reasons
+        and not result.clearance_tasks
+        and not result.production_tasks
+        and not result.contract_riders
+    ):
         st.write("Proceed with template agreement - contact legal with any queries")
 
