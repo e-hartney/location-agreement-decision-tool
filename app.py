@@ -50,7 +50,7 @@ if st.button("Assess"):
     limited_parking = limited_parking,
 )
 
-    if result.inform_legal == True:
+    if result.inform_legal:
         st.subheader("Contact legal for:")
         for r in result.legal_reasons:
            st.write(f"- {r}")
