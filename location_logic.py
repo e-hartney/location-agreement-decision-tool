@@ -1,7 +1,6 @@
 from dataclasses import dataclass
 from typing import List
 
-
 @dataclass
 class LocationAssessmentResult:
     inform_legal: bool
@@ -9,7 +8,6 @@ class LocationAssessmentResult:
     clearance_tasks: List[str]
     production_tasks: List[str]
     contract_riders: List[str]
-
 
 def assess_location_request(
     key_location: bool,
@@ -33,8 +31,6 @@ def assess_location_request(
     clearance_tasks = []
     production_tasks = []
     contract_riders = []
-
-
 
     # Inform legal team
     if key_location:
@@ -85,7 +81,6 @@ def assess_location_request(
         production_tasks.append("animal use / plan logistics on property")
         # animals included in standard contract template
 
-
     # Riders to include in contract
     if pyrotechnics: 
         contract_riders.append("pyrotechnics rider")
@@ -96,7 +91,6 @@ def assess_location_request(
     if crowd_scene: 
         contract_riders.append("crowd rider")
     
-
     return LocationAssessmentResult(
         inform_legal = inform_legal,
         legal_reasons = legal_reasons,
